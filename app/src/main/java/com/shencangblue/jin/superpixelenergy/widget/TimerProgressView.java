@@ -18,45 +18,50 @@ import com.shencangblue.jin.superpixelenergy.R;
 public class TimerProgressView extends View {
 
     private Paint paint;
-    private int sec= 1;
+
+    private int sec = 1;
     private float progress = 1;
+
     private boolean reqStop = false;
 
-    public TimerProgressView(@NonNull Context context){
-        this(context,null);
-
-    }
-    public TimerProgressView(@NonNull Context context,
-                             @Nullable AttributeSet attrs){
-        this(context,attrs,0);
+    public TimerProgressView(@NonNull Context context) {
+        this(context, null);
     }
 
     public TimerProgressView(@NonNull Context context,
-                             @Nullable AttributeSet attrs ,
-                             @AttrRes int defStyleAttr){
-         super(context,attrs,defStyleAttr);
+                             @Nullable AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public TimerProgressView(@NonNull Context context,
+                             @Nullable AttributeSet attrs,
+                             @AttrRes int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
 
         setColor(ContextCompat.getColor(context,
                 R.color.progress));
-
-    }
-
-    private void setColor(@ColorInt int color) {
-        paint = new Paint();
-        paint.setColor(color);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
         if (progress <= 0) {
             return;
         }
 
         int height = getHeight();
         float progressWidth = getWidth() * (progress / sec);
-        canvas.drawRect(0, 0, progressWidth, height, paint);
+        canvas.drawRect(0,
+                0,
+                progressWidth,
+                height,
+                paint);
+    }
 
+    public void setColor(@ColorInt int color) {
+        paint = new Paint();
+        paint.setColor(color);
     }
 
     public void start(final int SEC) {
@@ -75,7 +80,6 @@ public class TimerProgressView extends View {
     public void stop() {
         reqStop = true;
     }
-
 
     private class Task implements Runnable {
         @Override
