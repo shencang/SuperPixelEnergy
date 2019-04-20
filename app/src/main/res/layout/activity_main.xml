@@ -21,6 +21,17 @@
         android:gravity="bottom|center_horizontal">
 
     </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/view_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/panel_peeking"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <include layout="@layout/panel" />
+
+    </android.support.v4.widget.NestedScrollView>
 
 
 </android.support.design.widget.CoordinatorLayout>
