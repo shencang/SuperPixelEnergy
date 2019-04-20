@@ -4,3 +4,6 @@
 
 [Android多语言的适配以及APP内语言切换的实现(适配7.0)](https://blog.csdn.net/sinat_35721133/article/details/78327111)
 
+[玩转Android drawable图片适配](https://blog.csdn.net/myoungmeng/article/details/54090891)
+
+[]()
