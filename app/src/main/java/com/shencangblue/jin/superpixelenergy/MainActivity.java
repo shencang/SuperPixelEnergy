@@ -63,7 +63,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "ssssssssssssssssssssssssssssssssssssssssssssssssssssss";
+    private static final String TAG = "SPE-MainActivity";
     private SP sp;
 
     private PhotoView photoView;
