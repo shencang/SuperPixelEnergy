@@ -5,6 +5,7 @@ import android.support.annotation.StringDef;
 import com.google.gson.annotations.SerializedName;
 
 
+
 public class UploadConfigBean {
     // 图片类型
     @SerializedName("style")

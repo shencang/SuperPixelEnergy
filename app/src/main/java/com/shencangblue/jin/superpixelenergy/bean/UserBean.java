@@ -5,12 +5,13 @@ import android.support.annotation.IntDef;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
+
 import com.google.gson.annotations.SerializedName;
 import com.shencangblue.jin.superpixelenergy.R;
 import com.shencangblue.jin.superpixelenergy.util.C;
 
-public class UserBean {
 
+public class UserBean {
     @SerializedName("status")
     private String status;
 
@@ -74,9 +75,9 @@ public class UserBean {
         }
         return context.getString(R.string.user_grade_undefined);
     }
+
     private class User {
         @SerializedName("month_limit")
         private int imgNum;
     }
-
 }

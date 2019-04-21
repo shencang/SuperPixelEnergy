@@ -40,7 +40,7 @@
             android:tag="optimize"
             android:text="@string/action_optimize" />
 
-        <com.by_syk.bigjpg.widget.TimerProgressView
+        <com.shencangblue.jin.superpixelenergy.widget.TimerProgressView
             android:id="@+id/view_timer_progress"
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -65,7 +65,7 @@
                 android:layout_weight="2.0"
                 android:orientation="vertical">
 
-                <com.by_syk.bigjpg.widget.ConfigView
+                <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                     android:id="@+id/cv_type_art"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/bar_config"
@@ -73,7 +73,7 @@
                     android:tag="art"
                     cv:text="@string/type_art" />
 
-                <com.by_syk.bigjpg.widget.ConfigView
+                <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                     android:id="@+id/cv_type_photo"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/bar_config"
@@ -101,7 +101,7 @@
                     android:layout_height="@dimen/bar_config"
                     android:orientation="horizontal">
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_scale_2x"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -110,7 +110,7 @@
                         android:tag="1"
                         cv:text="@string/scale_2x" />
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_scale_4x"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -126,7 +126,7 @@
                     android:layout_height="@dimen/bar_config"
                     android:orientation="horizontal">
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_scale_8x"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -135,7 +135,7 @@
                         android:tag="3"
                         cv:text="@string/scale_8x" />
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_scale_16x"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -166,7 +166,7 @@
                     android:layout_height="@dimen/bar_config"
                     android:orientation="horizontal">
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_denoise_no"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -175,7 +175,7 @@
                         android:tag="-1"
                         cv:text="@string/denoise_no" />
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_denoise_low"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -191,7 +191,7 @@
                     android:layout_height="@dimen/bar_config"
                     android:orientation="horizontal">
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_denoise_middle"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -200,7 +200,7 @@
                         android:tag="1"
                         cv:text="@string/denoise_middle" />
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_denoise_high"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -209,7 +209,7 @@
                         android:tag="2"
                         cv:text="@string/denoise_high" />
 
-                    <com.by_syk.bigjpg.widget.ConfigView
+                    <com.shencangblue.jin.superpixelenergy.widget.ConfigView
                         android:id="@+id/cv_denoise_super"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"

@@ -11,12 +11,10 @@ import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
-
 import com.shencangblue.jin.superpixelenergy.R;
 
 
 public class TimerProgressView extends View {
-
     private Paint paint;
 
     private int sec = 1;
@@ -52,11 +50,7 @@ public class TimerProgressView extends View {
 
         int height = getHeight();
         float progressWidth = getWidth() * (progress / sec);
-        canvas.drawRect(0,
-                0,
-                progressWidth,
-                height,
-                paint);
+        canvas.drawRect(0, 0, progressWidth, height, paint);
     }
 
     public void setColor(@ColorInt int color) {

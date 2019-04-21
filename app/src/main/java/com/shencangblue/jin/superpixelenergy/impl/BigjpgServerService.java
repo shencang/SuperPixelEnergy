@@ -1,5 +1,6 @@
 package com.shencangblue.jin.superpixelenergy.impl;
 
+
 import com.google.gson.JsonObject;
 import com.shencangblue.jin.superpixelenergy.bean.LoginBean;
 import com.shencangblue.jin.superpixelenergy.bean.UploadBean;
@@ -19,7 +20,9 @@ import retrofit2.http.Part;
 import retrofit2.http.Query;
 import retrofit2.http.Url;
 
-
+/**
+ * Created by By_syk on 2017-06-08.
+ */
 
 public interface BigjpgServerService {
     @FormUrlEncoded

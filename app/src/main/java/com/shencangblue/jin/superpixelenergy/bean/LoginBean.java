@@ -2,8 +2,9 @@ package com.shencangblue.jin.superpixelenergy.bean;
 
 import com.google.gson.annotations.SerializedName;
 
-public class LoginBean {
 
+
+public class LoginBean {
     @SerializedName("status")
     private String status;
 
@@ -13,9 +14,11 @@ public class LoginBean {
     public String getStatus() {
         return status;
     }
-    public boolean isStatusOk(){
+
+    public boolean isStatusOk() {
         return "ok".equals(status);
     }
+
     public boolean isStatusErrPwd() {
         return "password_error".equals(status);
     }

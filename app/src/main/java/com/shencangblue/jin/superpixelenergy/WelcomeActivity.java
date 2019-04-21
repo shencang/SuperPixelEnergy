@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
 
 import com.by_syk.lib.sp.SP;
 import com.shencangblue.jin.superpixelenergy.bean.LoginBean;
@@ -22,6 +23,7 @@ import com.shencangblue.jin.superpixelenergy.util.RetrofitHelper;
 
 import retrofit2.Call;
 import retrofit2.Response;
+
 
 public class WelcomeActivity extends AppCompatActivity {
     private TextView tv;
@@ -210,4 +212,3 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     }
 }
-

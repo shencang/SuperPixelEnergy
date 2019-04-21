@@ -3,7 +3,6 @@ package com.shencangblue.jin.superpixelenergy.bean;
 import com.google.gson.annotations.SerializedName;
 
 
-
 public class UploadBean {
     @SerializedName("status")
     private String status;

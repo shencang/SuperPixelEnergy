@@ -10,59 +10,55 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.shencangblue.jin.superpixelenergy.R;
 
-public class ConfigView extends FrameLayout {
 
+public class ConfigView extends FrameLayout {
     private View viewDot;
     private TextView tvConfig;
 
-    public ConfigView(@NonNull Context context){
-        this(context,null);
-
+    public ConfigView(@NonNull Context context) {
+        this(context, null);
     }
-    public ConfigView(@NonNull Context context
-            , @Nullable AttributeSet attrs){
-        this(context,attrs,0);
+
+    public ConfigView(@NonNull Context context,
+                      @Nullable AttributeSet attrs) {
+        this(context, attrs, 0);
     }
 
     public ConfigView(@NonNull Context context,
                       @Nullable AttributeSet attrs,
-                      @AttrRes int defStyleAtrr){
-        super(context,attrs,defStyleAtrr);
+                      @AttrRes int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
 
         init(context);
 
-        loadConfig(context,attrs);
-
+        loadConfig(context, attrs);
     }
-
-
 
     private void loadConfig(@NonNull Context context,
                             @Nullable AttributeSet attrs) {
-
         TypedArray typedArray = context
                 .obtainStyledAttributes
-                        (attrs,
-                        R.styleable.ConfigView);
-        String text =typedArray.getString(
-                R.styleable.ConfigView_text);
-        boolean checked = typedArray.getBoolean(R.styleable
-                .ConfigView_checked
-                ,false);
-
+                (attrs,
+                R.styleable.ConfigView);
+        String text = typedArray.getString(R
+                .styleable
+                .ConfigView_text);
+        boolean checked = typedArray.getBoolean(R
+                .styleable
+                .ConfigView_checked,
+                false);
         typedArray.recycle();
 
-        if (text!= null){
+        if (text != null) {
             setText(text);
         }
         setChecked(checked);
-
     }
+
     private void init(Context context) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View viewContent = inflater.inflate(R.layout.config, null);
@@ -70,9 +66,8 @@ public class ConfigView extends FrameLayout {
 
         viewDot = viewContent.findViewById(R.id.dot);
         tvConfig = (TextView) viewContent.findViewById(R.id.tv);
-
-
     }
+
     public void setText(CharSequence text) {
         tvConfig.setText(text);
     }
@@ -103,5 +98,4 @@ public class ConfigView extends FrameLayout {
     public boolean isChecked() {
         return viewDot.getVisibility() == View.VISIBLE;
     }
-
 }

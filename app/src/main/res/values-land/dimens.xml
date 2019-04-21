@@ -12,6 +12,6 @@
     <dimen name="flower">96dp</dimen>
     <dimen name="config_dot_margin">4dp</dimen>
 
-    <integer name="sheet_weight" tools:ignore="MissingDefaultResource">5</integer>
+    <integer name="sheet_weight">5</integer>
 
 </resources>

@@ -19,6 +19,7 @@ package com.shencangblue.jin.superpixelenergy.util;
 import android.os.Build;
 
 
+
 public class C {
     public static final int SDK = Build.VERSION.SDK_INT;
 

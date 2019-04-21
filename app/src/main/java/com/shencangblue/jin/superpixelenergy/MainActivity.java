@@ -10,6 +10,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Point;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -18,13 +19,14 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 import com.by_syk.lib.checkimgformat.CheckImgFormat;
 import com.by_syk.lib.sp.SP;
@@ -59,10 +61,11 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
-import com.shencangblue.jin.superpixelenergy.R;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "ssssssssssssssssssssssssssssssssssssssssssssssssssssss";
     private SP sp;
+
     private PhotoView photoView;
     private TimerProgressView viewTimerProgress;
     private TextView tvAction;
@@ -82,24 +85,26 @@ public class MainActivity extends AppCompatActivity {
     private ConfigView cvDenoiseHigh;
     private ConfigView cvDenoiseSuper;
 
+    private BottomSheetBehavior bottomSheetBehavior;
+
     private Uri imgUri;
     private File cacheFile;
-    private BottomSheetBehavior bottomSheetBehavior;
-    private int userGrade = UserBean.GRADE_FREE;
-    private boolean isForeground = true;
 
+    private int userGrade = UserBean.GRADE_FREE;
+
+    private boolean isForeground = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
         init();
     }
 
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
+
         if (savedInstanceState == null) {
             if (imgUri != null) { // 外部APP请求处理
                 showImg(imgUri);
@@ -125,18 +130,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        isForeground=true;
+
+        isForeground = true;
+
         cancelNotification();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        isForeground =false;
+
+        isForeground = false;
     }
 
     private void init() {
         sp = new SP(this);
+
         userGrade = getIntent().getIntExtra("userGrade", UserBean.GRADE_FREE);
         imgUri = getIntent().getParcelableExtra("imgUri");
 
@@ -216,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void onChooseImg(View view) {
         if (collapsePanel()) {
             return;
@@ -257,6 +267,7 @@ public class MainActivity extends AppCompatActivity {
         cvTypePhoto.setChecked(id == cvTypePhoto.getId());
         sp.save("configType", (String) view.getTag());
     }
+
     public void onConfigScale(View view) {
         int id = view.getId();
         if (userGrade != UserBean.GRADE_UNDEFINED && userGrade != UserBean.GRADE_FREE) {

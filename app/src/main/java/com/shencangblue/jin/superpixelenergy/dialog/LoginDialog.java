@@ -13,6 +13,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.TextView;
 
+
 import com.by_syk.lib.sp.SP;
 import com.by_syk.lib.texttag.TextTag;
 import com.shencangblue.jin.superpixelenergy.R;

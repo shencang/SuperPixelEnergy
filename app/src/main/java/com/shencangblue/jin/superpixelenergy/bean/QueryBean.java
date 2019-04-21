@@ -4,7 +4,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -12,6 +11,7 @@ import com.shencangblue.jin.superpixelenergy.util.C;
 
 import java.util.HashMap;
 import java.util.Map;
+
 
 
 public class QueryBean {
