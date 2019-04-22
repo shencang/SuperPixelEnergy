@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity">
 
+    <!--欢迎页的标语-->
     <TextView
         android:id="@+id/tv"
         android:text="@string/slogan_welcome"
@@ -15,6 +16,7 @@
         android:layout_height="match_parent"
         android:onClick="onLaunch" />
 
+    <!--触发激活开始操作的按钮-->
     <Button
         style="?android:attr/buttonBarButtonStyle"
         android:id="@+id/bt_launch"

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">超级像素能量</string>
+    <string name="app_name">超级像素</string>
 
 
     <string name="url_bigjpg" translatable="false">http://bigjpg.com</string>
@@ -42,7 +42,7 @@
     <string name="label_pwd">password</string>
     <string name="action_login">sign in</string>
     <string name="reg_desc"><u>no account? to sign up</u></string>
-    <string name="slogan_welcome">welcome to bigjpg</string>
+    <string name="slogan_welcome">welcome to SuperPixel</string>
     <string name="slogan_login">signing in&#8230;</string>
     <string name="slogan_check">checking config&#8230;</string>
     <string name="status_err_pwd">error password</string>

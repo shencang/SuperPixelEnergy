@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
+    <!--
+
+    还没标注，仅添加了两个错误忽略
+
+    -->
     <View
         android:id="@+id/view_outside_1"
         android:layout_width="0dp"
@@ -30,7 +36,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:ignore="EllipsizeMaxLines" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -79,7 +86,8 @@
                 android:lines="1"
                 android:text="@string/reg_desc"
                 android:textColor="@color/reg_text"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                tools:ignore="EllipsizeMaxLines" />
 
             <Button
                 android:id="@+id/bt_login"

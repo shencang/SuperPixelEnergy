@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -8,6 +9,7 @@
     android:paddingEnd="@dimen/activity_horz_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
+    <!--登录面板-->
     <TextView
         android:id="@+id/tv_hint"
         android:textSize="12sp"
@@ -17,14 +19,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        tools:ignore="EllipsizeMaxLines" />
 
+    <!--登录面板的主体，邮件-->
     <android.support.design.widget.TextInputLayout
         android:hint="@string/label_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp">
 
+        <!--邮件输入处，起到用户名的作用-->
         <android.support.design.widget.TextInputEditText
             android:id="@+id/et_user"
             android:imeOptions="actionNext"
@@ -34,12 +39,14 @@
 
     </android.support.design.widget.TextInputLayout>
 
+    <!--登录面板的主体，密码-->
     <android.support.design.widget.TextInputLayout
         android:hint="@string/label_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp">
 
+        <!--密码编辑输入框-->
         <android.support.design.widget.TextInputEditText
             android:id="@+id/et_pwd"
             android:imeOptions="actionDone"
@@ -56,6 +63,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp">
 
+        <!--注册提示-->
         <TextView
             android:id="@+id/tv_reg_desc"
             android:layout_width="0dp"
@@ -66,8 +74,10 @@
             android:ellipsize="start"
             android:text="@string/reg_desc"
             android:textColor="@color/reg_text"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            tools:ignore="EllipsizeMaxLines" />
 
+        <!--登录按钮-->
         <Button
             android:id="@+id/bt_login"
             style="?android:attr/buttonBarButtonStyle"

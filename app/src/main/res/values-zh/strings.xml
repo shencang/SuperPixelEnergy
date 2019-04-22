@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">超级像素能量</string>
+    <string name="app_name">超级像素</string>
 
     <string name="hint_choose_img">打开图片进行优化</string>
     <string name="action_optimize">开始优化</string>
@@ -37,7 +37,7 @@
     <string name="label_pwd">密码</string>
     <string name="action_login">登录</string>
     <string name="reg_desc"><u>没有帐号？去注册并成为付费用户</u></string>
-    <string name="slogan_welcome">欢迎使用 BigJPG</string>
+    <string name="slogan_welcome">欢迎使用 超级像素</string>
     <string name="slogan_login">正在登录&#8230;</string>
     <string name="slogan_check">检查配置&#8230;</string>
     <string name="status_err_pwd">密码错误</string>

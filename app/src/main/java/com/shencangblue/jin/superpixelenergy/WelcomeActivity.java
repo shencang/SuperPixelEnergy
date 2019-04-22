@@ -24,6 +24,9 @@ import com.shencangblue.jin.superpixelenergy.util.RetrofitHelper;
 import retrofit2.Call;
 import retrofit2.Response;
 
+/**
+ *  欢迎的界面
+ */
 
 public class WelcomeActivity extends AppCompatActivity {
     private TextView tv;
