@@ -43,6 +43,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+        //初始化方法
         init();
 
         (new LoginTask()).execute();
